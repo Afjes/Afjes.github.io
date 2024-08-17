@@ -1,202 +1,87 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
-<meta name="theme-color" content="#222">
-<meta name="generator" content="Hexo 7.3.0">
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
-  <link rel="mask-icon" href="/images/logo.svg" color="#222">
-
-<link rel="stylesheet" href="/css/main.css">
-
-
-<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
-
-<script id="hexo-configurations">
-    var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"afjes.github.io","root":"/","scheme":"Muse","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
-  </script>
-
-  <meta name="description" content="记录每个人的美好时光">
-<meta property="og:type" content="website">
-<meta property="og:title" content="人生回忆录">
-<meta property="og:url" content="https://afjes.github.io/index.html">
-<meta property="og:site_name" content="人生回忆录">
-<meta property="og:description" content="记录每个人的美好时光">
-<meta property="og:locale" content="zh_CN">
-<meta property="article:author" content="Wang Zhe">
-<meta name="twitter:card" content="summary">
-
-<link rel="canonical" href="https://afjes.github.io/">
-
-
-<script id="page-configurations">
-  // https://hexo.io/docs/variables.html
-  CONFIG.page = {
-    sidebar: "",
-    isHome : true,
-    isPost : false,
-    lang   : 'zh-CN'
-  };
-</script>
-
-  <title>人生回忆录</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    人生回忆录
+  </title>
+  <link rel="icon" href="/imgs/favicon.ico">
+  <link rel="stylesheet" href="/css/style.css" type="text/css">
+  <link rel="stylesheet" href="/plugins/highlight/styles/vs2015.css">
+  <!-- Gitalk -->
   
-
-
-
-
-
-
-  <noscript>
-  <style>
-  .use-motion .brand,
-  .use-motion .menu-item,
-  .sidebar-inner,
-  .use-motion .post-block,
-  .use-motion .pagination,
-  .use-motion .comments,
-  .use-motion .post-header,
-  .use-motion .post-body,
-  .use-motion .collection-header { opacity: initial; }
-
-  .use-motion .site-title,
-  .use-motion .site-subtitle {
-    opacity: initial;
-    top: initial;
-  }
-
-  .use-motion .logo-line-before i { left: initial; }
-  .use-motion .logo-line-after i { right: initial; }
-  </style>
-</noscript>
-
-</head>
-
-<body itemscope itemtype="http://schema.org/WebPage">
-  <div class="container use-motion">
-    <div class="headband"></div>
-
-    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
-      <div class="header-inner"><div class="site-brand-container">
-  <div class="site-nav-toggle">
-    <div class="toggle" aria-label="切换导航栏">
-      <span class="toggle-line toggle-line-first"></span>
-      <span class="toggle-line toggle-line-middle"></span>
-      <span class="toggle-line toggle-line-last"></span>
-    </div>
-  </div>
-
-  <div class="site-meta">
-
-    <a href="/" class="brand" rel="start">
-      <span class="logo-line-before"><i></i></span>
-      <h1 class="site-title">人生回忆录</h1>
-      <span class="logo-line-after"><i></i></span>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.css">
+    <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.min.js"></script>
+    <script>
+      window.addEventListener('load', () => {
+        const gitalkContainer = document.getElementById('gitalk-container');
+        if (!gitalkContainer) return;
+        const gitalk = new Gitalk({
+          clientID: '',
+          clientSecret: '',
+          repo: '',      // The repository of store comments '
+          owner: '',
+          admin: ['xx'],
+          id: location.pathname,      // Ensure uniqueness and length less than 50
+          distractionFreeMode: false  // Facebook-like distraction free mode
+        })
+        gitalk.render('gitalk-container');
+      })
+    </script>
+    
+<meta name="generator" content="Hexo 7.3.0"></head>
+<body>
+    <nav>
+  <div class="nav-item logo">
+    <a href="/">
+      <button class="btn btn-hover">
+        <span>
+          人生回忆录
+        </span>
+      </button>
     </a>
   </div>
-
-  <div class="site-nav-right">
-    <div class="toggle popup-trigger">
-    </div>
-  </div>
-</div>
-
-
-
-
-<nav class="site-nav">
-  <ul id="menu" class="main-menu menu">
-        <li class="menu-item menu-item-home">
-
-    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
-
-  </li>
-        <li class="menu-item menu-item-tags">
-
-    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
-
-  </li>
-        <li class="menu-item menu-item-categories">
-
-    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
-
-  </li>
-        <li class="menu-item menu-item-archives">
-
-    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
-
-  </li>
-  </ul>
+  
+    <div class="nav-item"><a href="/">
+        主页
+      </a></div>
+    
+    <div class="nav-item"><a href="/archives">
+        时间轴
+      </a></div>
+    
+    <div class="nav-item"><a href="/tags">
+        标签
+      </a></div>
+    
+    <div class="nav-item"><a href="/about">
+        关于
+      </a></div>
+    
 </nav>
-
-
-
-
-</div>
-    </header>
-
+    <main>
+        <div class="wrapper">
     
-  <div class="back-to-top">
-    <i class="fa fa-arrow-up"></i>
-    <span>0%</span>
-  </div>
-
-
-    <main class="main">
-      <div class="main-inner">
-        <div class="content-wrap">
-          
-
-          <div class="content index posts-expand">
-            
       
+        <article class="card ">
   
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://afjes.github.io/2024/08/08/%E5%A8%B1%E4%B9%90%E5%B1%80/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Wang Zhe">
-      <meta itemprop="description" content="记录每个人的美好时光">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="人生回忆录">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2024/08/08/%E5%A8%B1%E4%B9%90%E5%B1%80/" class="post-title-link" itemprop="url">娱乐局</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
               
+                <div class="posted-on">『24年08月08日』</div>
+                <h3 class="article-title"><a href="/2024/08/08/娱乐局/"><span>
+                      娱乐局
+                    </span></a></h3>
+                
+                    
+                      <div class="article-top-meta">
+                        
+                      </div>
+                      
 
-              <time title="创建时间：2024-08-08 14:04:30 / 修改时间：14:06:20" itemprop="dateCreated datePublished" datetime="2024-08-08T14:04:30+08:00">2024-08-08</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>那是一个晴朗的周末傍晚，我和几位好友相约去KTV唱歌，想要在这个轻松愉快的氛围中释放一周的工作压力，同时也加深我们之间的友情。</p>
+                          <div class="article-content">
+                            <div class="entry">
+                              
+                                    <p>那是一个晴朗的周末傍晚，我和几位好友相约去KTV唱歌，想要在这个轻松愉快的氛围中释放一周的工作压力，同时也加深我们之间的友情。</p>
 <p>我们提前预订了一个大包间，确保有足够的空间让我们尽情欢唱。到达KTV的时候，天色已渐渐暗了下来，霓虹灯在街道上闪烁，映衬着我们期待又兴奋的心情。一进门，就被那五彩斑斓的灯光和动感的音乐所包围，气氛瞬间被点燃。</p>
 <p>我们选了一首轻松欢快的歌曲作为开场，是我和朋友们都很喜欢的《朋友》。随着音乐响起，大家不约而同地跟着节奏摇摆起来，麦克风在每个人手中传递，歌声与笑声交织在一起，充满了整个房间。那一刻，所有的烦恼似乎都被抛到了九霄云外，只留下纯粹的快乐和友情的温暖。</p>
 <p>接着，我们开始轮流点歌，从经典老歌到流行新曲，每一首都承载着我们不同的回忆和故事。有首歌是我和一位朋友共同喜欢的，它让我们想起了大学时一起熬夜准备考试的日子，那份并肩作战的情谊至今仍让我们感到温暖。唱到这首歌时，我们相视一笑，眼中闪烁着对那段时光的怀念。</p>
@@ -204,181 +89,92 @@
 <p>随着时间的流逝，夜色越来越深，但我们的热情却丝毫未减。最后，我们选择了一首意义深远的歌曲作为结束，那是关于梦想与坚持的，每一句歌词都像是对我们友情的颂歌，激励着我们无论未来道路如何，都要携手同行，勇敢追梦。</p>
 <p>当最后一曲唱完，我们依依不舍地离开了KTV。虽然夜已深，但我们的心却因为这次相聚而更加温暖和紧密。这不仅仅是一次简单的唱歌之旅，更是一次心灵的交流和情感的升华。在回家的路上，我们相约，这样的欢乐时光，以后一定要多多创造。</p>
 
+                                      
+                            </div>
+                          </div>
+                          <div class="article-footer">
+
+                          </div>
+</article>
+       
       
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
-
       
+        <article class="card ">
   
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://afjes.github.io/2024/08/08/wangzhe-test-one/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Wang Zhe">
-      <meta itemprop="description" content="记录每个人的美好时光">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="人生回忆录">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2024/08/08/wangzhe-test-one/" class="post-title-link" itemprop="url">wangzhe test one</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
               
+                <div class="posted-on">『24年08月08日』</div>
+                <h3 class="article-title"><a href="/2024/08/08/wangzhe-test-one/"><span>
+                      wangzhe test one
+                    </span></a></h3>
+                
+                    
+                      <div class="article-top-meta">
+                        
+                      </div>
+                      
 
-              <time title="创建时间：2024-08-08 13:14:05 / 修改时间：13:14:52" itemprop="dateCreated datePublished" datetime="2024-08-08T13:14:05+08:00">2024-08-08</time>
-            </span>
+                          <div class="article-content">
+                            <div class="entry">
+                              
+                                    <p>随便写点什么东西，即可进行后续操作，第一次测试！！</p>
 
-          
+                                      
+                            </div>
+                          </div>
+                          <div class="article-footer">
 
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
+                          </div>
+</article>
+       
       
-          <p>随便写点什么东西，即可进行后续操作，第一次测试！！</p>
-
       
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
+        <article class="card ">
   
-  
-  
-
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://afjes.github.io/2024/08/08/How-to-build-up-a-blog-site-using-Hexo-and-GitHub-Pages/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Wang Zhe">
-      <meta itemprop="description" content="记录每个人的美好时光">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="人生回忆录">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2024/08/08/How-to-build-up-a-blog-site-using-Hexo-and-GitHub-Pages/" class="post-title-link" itemprop="url">How to build up a blog site using Hexo and GitHub Pages</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
               
+                <div class="posted-on">『24年08月08日』</div>
+                <h3 class="article-title"><a href="/2024/08/08/How-to-build-up-a-blog-site-using-Hexo-and-GitHub-Pages/"><span>
+                      How to build up a blog site using Hexo and GitHub Pages
+                    </span></a></h3>
+                
+                    
+                      <div class="article-top-meta">
+                        
+                      </div>
+                      
 
-              <time title="创建时间：2024-08-08 11:00:06 / 修改时间：11:03:10" itemprop="dateCreated datePublished" datetime="2024-08-08T11:00:06+08:00">2024-08-08</time>
-            </span>
+                          <div class="article-content">
+                            <div class="entry">
+                              
+                                    <p>2024年7月31日：我参加了夜市，感觉很好，很棒，我要继续努力，加油，上班赚钱，给家人很好很好的生活<br>2024年8月2日，我和人生回忆录的朋友们一起了解appbuilder的使用方式，觉得ai的趋势已经势不可挡，ai的赛道上必须有我们的参与。2024年8月4日，今天和朋友们一起去吃饭，吃的是烤鸭和鱼，觉得可以跟好朋友一起去玩很开心，人生旅途中，能有几个知心朋友，非常难能可贵。</p>
 
-          
+                                      
+                            </div>
+                          </div>
+                          <div class="article-footer">
 
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
+                          </div>
+</article>
+       
       
-          <p>2024年7月31日：我参加了夜市，感觉很好，很棒，我要继续努力，加油，上班赚钱，给家人很好很好的生活<br>2024年8月2日，我和人生回忆录的朋友们一起了解appbuilder的使用方式，觉得ai的趋势已经势不可挡，ai的赛道上必须有我们的参与。2024年8月4日，今天和朋友们一起去吃饭，吃的是烤鸭和鱼，觉得可以跟好朋友一起去玩很开心，人生旅途中，能有几个知心朋友，非常难能可贵。</p>
-
       
-    </div>
-
-    
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
+        <article class="card ">
   
-  
-  
+              
+                <div class="posted-on">『24年08月08日』</div>
+                <h3 class="article-title"><a href="/2024/08/08/hello-world/"><span>
+                      Hello World
+                    </span></a></h3>
+                
+                    
+                      <div class="article-top-meta">
+                        
+                      </div>
+                      
 
-      
-  
-  
-  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://afjes.github.io/2024/08/08/hello-world/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.gif">
-      <meta itemprop="name" content="Wang Zhe">
-      <meta itemprop="description" content="记录每个人的美好时光">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="人生回忆录">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          
-            <a href="/2024/08/08/hello-world/" class="post-title-link" itemprop="url">Hello World</a>
-        </h2>
-
-        <div class="post-meta">
-            <span class="post-meta-item">
-              <span class="post-meta-item-icon">
-                <i class="far fa-calendar"></i>
-              </span>
-              <span class="post-meta-item-text">发表于</span>
-
-              <time title="创建时间：2024-08-08 10:34:48" itemprop="dateCreated datePublished" datetime="2024-08-08T10:34:48+08:00">2024-08-08</time>
-            </span>
-
-          
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-          <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
+                          <div class="article-content">
+                            <div class="entry">
+                              
+                                    <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
 
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
@@ -392,173 +188,67 @@
 
 <p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
 
+                                      
+                            </div>
+                          </div>
+                          <div class="article-footer">
+
+                          </div>
+</article>
+       
       
-    </div>
-
     
-    
-    
-      <footer class="post-footer">
-        <div class="post-eof"></div>
-      </footer>
-  </article>
-  
-  
-  
+</div>
 
-
-  
-
-
-
-          </div>
-          
+    </main>
+    <div class="footer">
+  <div class="copy">
+    &copy;
+      2024 君の名は。|
+        によって作成されたテーマ<a href="https://github.com/JackZong" target="_blank" title="Theme created by @J.zong">@J.zong</a>
+  </div>
+  <div class="hexo">
+    <span id="busuanzi_container_site_pv">本站总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+  </div>
+  <div class="hexo" title="Powered by Hexo">
+    搭載 <a href="http://hexo.io/" target="_blank">Hexo</a> | <a href="javascript:void(0);" id="bgToggle"> 背景画像 </a>
+  </div>
+</div>
 
 <script>
-  window.addEventListener('tabs:register', () => {
-    let { activeClass } = CONFIG.comments;
-    if (CONFIG.comments.storage) {
-      activeClass = localStorage.getItem('comments_active') || activeClass;
+  window.onload = function () {
+    const withBg = localStorage.getItem('withBg');
+    if (withBg === 'true') {
+      document.body.classList.add('with-bg');
+      document.getElementById('bgToggle').classList.add('active');
     }
-    if (activeClass) {
-      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
-      if (activeTab) {
-        activeTab.click();
+
+    document.getElementById('bgToggle').addEventListener('click', function (e) {
+      e.preventDefault();
+      const withBg = localStorage.getItem('withBg');
+      if (withBg === 'true') {
+        localStorage.setItem('withBg', 'false');
+        document.body.classList.remove('with-bg');
+        document.getElementById('bgToggle').classList.remove('active');
+      } else {
+        localStorage.setItem('withBg', 'true');
+        document.body.classList.add('with-bg');
+        document.getElementById('bgToggle').classList.add('active');
       }
-    }
-  });
-  if (CONFIG.comments.storage) {
-    window.addEventListener('tabs:click', event => {
-      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
-      let commentClass = event.target.classList[1];
-      localStorage.setItem('comments_active', commentClass);
-    });
+    })
   }
 </script>
 
-        </div>
-          
-  
-  <div class="toggle sidebar-toggle">
-    <span class="toggle-line toggle-line-first"></span>
-    <span class="toggle-line toggle-line-middle"></span>
-    <span class="toggle-line toggle-line-last"></span>
-  </div>
 
-  <aside class="sidebar">
-    <div class="sidebar-inner">
-
-      <ul class="sidebar-nav motion-element">
-        <li class="sidebar-nav-toc">
-          文章目录
-        </li>
-        <li class="sidebar-nav-overview">
-          站点概览
-        </li>
-      </ul>
-
-      <!--noindex-->
-      <div class="post-toc-wrap sidebar-panel">
-      </div>
-      <!--/noindex-->
-
-      <div class="site-overview-wrap sidebar-panel">
-        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
-  <p class="site-author-name" itemprop="name">Wang Zhe</p>
-  <div class="site-description" itemprop="description">记录每个人的美好时光</div>
-</div>
-<div class="site-state-wrap motion-element">
-  <nav class="site-state">
-      <div class="site-state-item site-state-posts">
-          <a href="/archives/">
-        
-          <span class="site-state-item-count">4</span>
-          <span class="site-state-item-name">日志</span>
-        </a>
-      </div>
-  </nav>
-</div>
-
-
-
-      </div>
-
-    </div>
-  </aside>
-  <div id="sidebar-dimmer"></div>
-
-
-      </div>
-    </main>
-
-    <footer class="footer">
-      <div class="footer-inner">
-        
-
-        
-
-<div class="copyright">
-  
-  &copy; 
-  <span itemprop="copyrightYear">2024</span>
-  <span class="with-love">
-    <i class="fa fa-heart"></i>
-  </span>
-  <span class="author" itemprop="copyrightHolder">Wang Zhe</span>
-</div>
-  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://muse.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Muse</a> 强力驱动
-  </div>
-
-        
-
-
-
-
-
-
-
-
-      </div>
-    </footer>
-  </div>
-
-  
-  <script src="/lib/anime.min.js"></script>
-  <script src="/lib/velocity/velocity.min.js"></script>
-  <script src="/lib/velocity/velocity.ui.min.js"></script>
-
-<script src="/js/utils.js"></script>
-
-<script src="/js/motion.js"></script>
-
-
-<script src="/js/schemes/muse.js"></script>
-
-
-<script src="/js/next-boot.js"></script>
-
-
-
-
+  <script src="/plugins/highlight/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
   
 
+    
+      <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+      
+        </body>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
-
-  
-
+        </html>
 </body>
 </html>
